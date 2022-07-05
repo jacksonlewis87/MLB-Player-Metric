@@ -6,16 +6,16 @@ In a short period of time (roughly 4 hours), create a simple but informative bas
 A basic measure of how much a player increases their team’s expected run total per at-bat, or, for pitchers, how much the opposing batter increases their team’s expected run total per at-bat.
 
 ## Steps
-# Data Collection
+### Data Collection
 Create a python script to scrape play-by-play data from baseball-reference.com and store it in a created local database. Data from years 2021 and 2022 will be collected.
 
-# Dataset Creation
+### Dataset Creation
 Clean the collected data by removing mid-at-bat events (steals, passed-balls, etc.), and then determine the number of outs and baserunners before and after each at bat.
 
-# Assign Value to Each ‘State’
+### Assign Value to Each ‘State’
 For each unique combination of outs/baserunners, calculate the average number of runs scored for the batting team after an at-bat in that ‘state’.
 
-# Calculate the Metric
+### Calculate the Metric
 Grouping by year, team, and player, calculate the difference between the expected number of runs scored given the pre-at-bat ‘state’ and the observed runs scored, plus the value of the post-at-bat ‘state’.
 
 ## Analysis
